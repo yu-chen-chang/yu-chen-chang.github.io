@@ -142,7 +142,7 @@ $(document).ready(function() {
                     if (x + dx >= b.x - ballRadius && x + dx <= b.x + brickWidth + ballRadius && y + dy >= b.y - ballRadius && y + dy <= b.y + brickHeight + ballRadius) {
                         dy = -dy;
                         b.status = 0; // calculations
-                        score=15;
+                        score++;
                         if (score == brickColumnCount * brickRowCount) {
                             clearInterval(interval);
                             $(".container").show();
